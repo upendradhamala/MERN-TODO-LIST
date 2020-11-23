@@ -1,0 +1,25 @@
+{
+  "name": "todomernstack",
+  "version": "1.0.0",
+  "description": "this is my new project",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start":"node backend/server",
+    "server":"nodemon backend/server",
+    "client":"npm start --prefix frontend",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "upendra dhamala",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
+ 
