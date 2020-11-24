@@ -5,14 +5,15 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start":"node backend/server",
-    "server":"nodemon backend/server",
-    "client":"npm start --prefix frontend",
-    "dev":"concurrently \"npm run server\" \"npm run client\""
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "upendra dhamala",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "mongoose": "^5.10.15"
@@ -22,4 +23,3 @@
     "nodemon": "^2.0.6"
   }
 }
- 

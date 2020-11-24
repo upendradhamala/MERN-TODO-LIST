@@ -1,11 +1,11 @@
-import './App.css';
-
-function App() {
+import React from 'react'
+import Addtodo from './components/Addtodo'
+const App = () => {
   return (
-    <div className="App">
-      hlo
+    <div>
+      <Addtodo/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
